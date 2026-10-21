@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b1220">
+<title>كورة لايف | مباريات ونتائج</title>
+<style>
+:root{--bg:#080d17;--panel:#111a2a;--panel2:#172338;--line:#26344b;--text:#f2f6fc;--muted:#a6b4c9;--green:#28d17c;--green2:#13a862;--red:#ff5c67;--gold:#ffc857}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 10% 0%,#15253a 0,transparent 34%),var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Tahoma,Arial,sans-serif;min-height:100vh}button,input,select{font:inherit}button{cursor:pointer}a{color:inherit}.wrap{width:min(100%,980px);margin:auto;padding:0 14px 90px}.top{display:flex;align-items:center;justify-content:space-between;padding:18px 2px 14px;gap:10px}.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:22px}.ball{display:grid;place-items:center;background:var(--green);color:#07130c;width:42px;height:42px;border-radius:14px;font-size:23px}.brand small{display:block;font-size:11px;color:var(--muted);font-weight:500;margin-top:1px}.pill{border:1px solid #2c4157;background:#142238;color:#d9e8f7;border-radius:999px;padding:8px 11px;font-size:12px}.hero{background:linear-gradient(125deg,#153c32,#13253a 58%,#1b2440);border:1px solid #285344;border-radius:22px;padding:18px;margin:4px 0 16px;position:relative;overflow:hidden}.hero:after{content:"⚽";position:absolute;left:12px;bottom:-28px;font-size:100px;opacity:.10}.hero h1{font-size:24px;margin:0 0 5px}.hero p{margin:0;color:#c5d7e5;font-size:13px;line-height:1.7;max-width:80%}.hero .date{font-size:12px;color:#d7f7e6;margin-top:13px}.searchrow{display:flex;gap:8px;margin:14px 0}.searchrow input{min-width:0;flex:1}.field{width:100%;padding:12px 13px;border-radius:12px;border:1px solid var(--line);background:#0c1422;color:var(--text);outline:none}.field:focus{border-color:var(--green)}.btn{border:0;border-radius:12px;padding:11px 14px;background:var(--green);color:#06150c;font-weight:800}.btn.secondary{background:#24344c;color:#edf5ff;border:1px solid #34465f}.btn.small{padding:8px 10px;font-size:12px}.tabs{display:flex;gap:7px;overflow:auto;padding:3px 0 13px;scrollbar-width:none}.tabs button{white-space:nowrap;border:1px solid var(--line);background:#111b2b;color:var(--muted);padding:10px 13px;border-radius:12px}.tabs button.active{background:var(--green);border-color:var(--green);color:#06150c;font-weight:800}.section{display:none}.section.active{display:block}.sectionhead{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:12px 0}.sectionhead h2{font-size:18px;margin:0}.muted{color:var(--muted);font-size:12px}.notice{border:1px solid #4a3c24;background:#261f13;color:#ffe0a3;border-radius:12px;padding:12px;font-size:12px;line-height:1.7;margin:12px 0}.status{font-size:12px;color:var(--muted);margin:8px 2px;line-height:1.7}.matchlist{display:grid;gap:10px}.match{background:linear-gradient(145deg,var(--panel),#0e1726);border:1px solid var(--line);border-radius:17px;padding:13px}.league{font-size:11px;color:#b4c5d9;display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.teams{display:grid;grid-template-columns:1fr 66px 1fr;align-items:center;gap:8px}.team{text-align:center;font-weight:750;font-size:13px;line-height:1.5;overflow-wrap:anywhere}.crest{display:block;font-size:25px;margin-bottom:4px}.score{text-align:center;font-size:20px;font-weight:900;direction:ltr}.score small{display:block;font-size:11px;font-weight:600;color:var(--muted);margin-top:4px;direction:rtl}.matchbottom{display:flex;align-items:center;justify-content:space-between;gap:7px;margin-top:13px;padding-top:10px;border-top:1px solid #202e43}.tag{font-size:11px;color:var(--green);background:#123324;padding:5px 8px;border-radius:8px}.fav{border:1px solid #394962;background:#172338;color:#ffdb77;border-radius:10px;padding:6px 9px}.empty{border:1px dashed #31425b;border-radius:16px;padding:25px 16px;text-align:center;color:var(--muted);line-height:1.8}.rowform{display:flex;gap:8px;flex-wrap:wrap}.rowform>*{flex:1;min-width:150px}.tablewrap{overflow:auto;border:1px solid var(--line);border-radius:14px}.standings{border-collapse:collapse;width:100%;min-width:490px;font-size:12px;background:var(--panel)}.standings th,.standings td{padding:11px 8px;border-bottom:1px solid var(--line);text-align:center}.standings th{color:#b9c8dc;background:#172338}.standings td:nth-child(2){text-align:right;font-weight:700}.newsgrid{display:grid;gap:10px}.newsitem{padding:14px;border-radius:15px;background:var(--panel);border:1px solid var(--line)}.newsitem h3{font-size:14px;margin:0 0 7px}.newsitem p{font-size:12px;color:var(--muted);line-height:1.7;margin:0 0 10px}.linkbtn{display:inline-block;color:#91edbc;text-decoration:none;font-size:12px;font-weight:700}.playerbox{aspect-ratio:16/9;background:#03070c;border:1px solid #34445c;border-radius:16px;display:grid;place-items:center;text-align:center;padding:20px;color:var(--muted);line-height:1.8}.settings{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:14px;margin-top:14px}.settings h3{font-size:15px;margin:0 0 8px}.settings p{font-size:12px;color:var(--muted);line-height:1.7}.bottomnav{position:fixed;bottom:0;left:0;right:0;background:#0b1220f2;backdrop-filter:blur(14px);border-top:1px solid #26344b;display:flex;justify-content:center;z-index:5;padding:8px max(8px,env(safe-area-inset-left)) calc(8px + env(safe-area-inset-bottom))}.bottominner{width:min(100%,700px);display:grid;grid-template-columns:repeat(5,1fr);gap:4px}.bottominner button{border:0;background:transparent;color:var(--muted);font-size:10px;padding:5px 2px;border-radius:10px}.bottominner button span{display:block;font-size:20px;margin-bottom:3px}.bottominner button.active{color:var(--green);background:#14271f}.footer{text-align:center;color:#788ba5;font-size:10px;margin-top:28px;line-height:1.8}
+@media(min-width:700px){.matchlist{grid-template-columns:repeat(2,minmax(0,1fr))}.newsgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero h1{font-size:30px}.wrap{padding-top:10px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><div class="brand"><div class="ball">⚽</div><div>كورة لايف<small>المباريات • النتائج • الترتيب</small></div></div><button class="pill" id="refreshTop">↻ تحديث</button></header>
+<section class="hero"><h1>الكورة في مكان واحد</h1><p>تابع جدول المباريات والنتائج وترتيب الدوريات، وابحث عن فريقك المفضل بسهولة.</p><div class="date" id="today"></div></section>
+<div class="searchrow"><input id="search" class="field" placeholder="ابحث عن فريق أو دوري..." aria-label="بحث"><button class="btn" id="searchBtn">بحث</button></div>
+<nav class="tabs" id="tabs">
+<button class="active" data-tab="matches">⚽ المباريات</button><button data-tab="leagues">🏆 الدوريات</button><button data-tab="news">📰 الأخبار</button><button data-tab="watch">▶ المشاهدة</button><button data-tab="favorites">⭐ المفضلة</button><button data-tab="settings">⚙ الإعدادات</button>
+</nav>
+<section class="section active" id="matches">
+<div class="sectionhead"><h2>مباريات اليوم</h2><span class="muted" id="matchCount">—</span></div>
+<div class="rowform"><input type="date" id="matchDate" class="field"><select id="statusFilter" class="field"><option value="all">كل الحالات</option><option value="live">مباشر</option><option value="scheduled">لم تبدأ</option><option value="finished">انتهت</option></select></div>
+<div id="matchStatus" class="status">لتحميل البيانات الحقيقية، أضف مفتاح API من الإعدادات.</div>
+<div id="matchList" class="matchlist"></div>
+</section>
+<section class="section" id="leagues">
+<div class="sectionhead"><h2>الدوريات والترتيب</h2></div>
+<p class="muted">اختار دوريًا لعرض جدول الترتيب المتاح في باقة مصدر البيانات.</p>
+<select id="leagueSelect" class="field">
+<option value="PL">الدوري الإنجليزي الممتاز</option><option value="PD">الدوري الإسباني</option><option value="BL1">الدوري الألماني</option><option value="SA">الدوري الإيطالي</option><option value="FL1">الدوري الفرنسي</option><option value="CL">دوري أبطال أوروبا</option><option value="WC">كأس العالم</option>
+</select>
+<button class="btn" id="loadStandings" style="width:100%;margin-top:9px">عرض الترتيب</button>
+<div id="standingsStatus" class="status"></div><div id="standingsTable"></div>
+</section>
+<section class="section" id="news">
+<div class="sectionhead"><h2>أخبار الكرة والانتقالات</h2></div>
+<div class="notice">الأخبار هنا تفتح نتائج حديثة من Google News؛ ليست مقالات مخزنة داخل الموقع. عند نشر الموقع، يمكن ربط مصدر أخبار مرخّص.</div>
+<div class="newsgrid">
+<div class="newsitem"><h3>أخبار كرة القدم</h3><p>آخر الأخبار من مصادر إخبارية متنوعة.</p><a class="linkbtn" target="_blank" rel="noopener" href="https://news.google.com/search?q=football%20news&hl=ar&gl=EG&ceid=EG:ar">افتح الأخبار ↗</a></div>
+<div class="newsitem"><h3>أخبار الانتقالات</h3><p>أخبار انتقالات اللاعبين والشائعات مع ضرورة مراجعة المصدر.</p><a class="linkbtn" target="_blank" rel="noopener" href="https://news.google.com/search?q=football%20transfers&hl=ar&gl=EG&ceid=EG:ar">افتح أخبار الانتقالات ↗</a></div>
+<div class="newsitem"><h3>أخبار الدوري المصري</h3><p>تابع المستجدات المتعلقة بالأندية المصرية.</p><a class="linkbtn" target="_blank" rel="noopener" href="https://news.google.com/search?q=الدوري%20المصري%20كرة%20القدم&hl=ar&gl=EG&ceid=EG:ar">افتح الأخبار ↗</a></div>
+<div class="newsitem"><h3>أخبار دوري أبطال أوروبا</h3><p>أخبار الفرق والمباريات الأوروبية.</p><a class="linkbtn" target="_blank" rel="noopener" href="https://news.google.com/search?q=Champions%20League&hl=ar&gl=EG&ceid=EG:ar">افتح الأخبار ↗</a></div>
+</div>
+</section>
+<section class="section" id="watch">
+<div class="sectionhead"><h2>صفحة مشاهدة المباراة</h2></div>
+<div class="playerbox">▶<br>مساحة مشغل الفيديو<br><small>أضف رابط بث تملك حق عرضه أو رابطًا رسميًا من صاحب الحقوق.</small></div>
+<div class="settings"><h3>فتح البث الرسمي</h3><p>الصق رابط صفحة البث الرسمية أو المشغل المصرح به. لن يحاول الموقع تجاوز الحماية أو الوصول إلى بث غير مصرح به.</p><input class="field" id="streamUrl" type="url" placeholder="https://..."><button class="btn" id="openStream" style="width:100%;margin-top:8px">فتح الرابط</button></div>
+</section>
+<section class="section" id="favorites">
+<div class="sectionhead"><h2>المباريات المفضلة</h2><span class="muted">محفوظة على هذا الجهاز</span></div><div id="favList" class="matchlist"></div>
+</section>
+<section class="section" id="settings">
+<div class="sectionhead"><h2>إعدادات الموقع</h2></div>
+<div class="settings"><h3>مصدر بيانات المباريات</h3><p>تم تجهيز الموقع ليجلب البيانات من خدمة آمنة على الخادم بدل وضع مفتاح API داخل الصفحة. بعد نشر ملفات الموقع على Netlify، أضف المفتاح في إعدادات الموقع باسم <b>FOOTBALL_DATA_TOKEN</b>، ثم حدّث الصفحة. لا تضع المفتاح داخل ملف HTML أو ترسله في المحادثات.</p><a class="linkbtn" target="_blank" rel="noopener" href="https://www.football-data.org/client/register">موقع Football-Data.org ↗</a><div id="keyStatus" class="status">هذا الملف وحده لا يجلب البيانات عند فتحه من مدير الملفات؛ يجب نشر الحزمة على Netlify لتعمل الوصلة الآمنة.</div></div>
+<div class="settings"><h3>التنبيهات</h3><p>تجربة طلب إذن تنبيهات المتصفح. التنبيهات التلقائية عند تغيّر نتيجة المباراة تحتاج تشغيل الموقع في بيئة تدعم الإشعارات أو خدمة خلفية.</p><button class="btn secondary" id="enableNotifications">تفعيل تنبيهات المتصفح</button><div id="notifStatus" class="status"></div></div>
+<div class="notice">مهم: هذه الحزمة تحتاج نشرًا على Netlify وإضافة متغير FOOTBALL_DATA_TOKEN في إعدادات الموقع. بيانات Football-Data.org محدودة حسب باقة الحساب، ولا تتضمن بالضرورة كل الدوريات أو كل تفاصيل المباريات المباشرة. لا توجد روابط بث مدمجة تلقائيًا.</div>
+</section>
+<div class="footer">نسخة تجريبية أولى • صُممت لتناسب شاشات الموبايل • لا تمثل الموقع الرسمي لأي دوري</div>
+</div>
+<div class="bottomnav"><div class="bottominner">
+<button class="active" data-tab="matches"><span>⚽</span>المباريات</button><button data-tab="leagues"><span>🏆</span>الدوريات</button><button data-tab="news"><span>📰</span>الأخبار</button><button data-tab="favorites"><span>⭐</span>المفضلة</button><button data-tab="settings"><span>⚙</span>الإعدادات</button>
+</div></div>
+<script>
+const $=id=>document.getElementById(id);
+const API='/.netlify/functions/football-data';
+const competitions={PL:'الدوري الإنجليزي',PD:'الدوري الإسباني',BL1:'الدوري الألماني',SA:'الدوري الإيطالي',FL1:'الدوري الفرنسي',CL:'دوري أبطال أوروبا',WC:'كأس العالم'};
+let matches=[], favoriteIds=JSON.parse(localStorage.getItem('kl_favs')||'[]');
+function localDate(d=new Date()){return new Intl.DateTimeFormat('en-CA',{timeZone:'Africa/Cairo',year:'numeric',month:'2-digit',day:'2-digit'}).format(d)}
+function fmtDate(s){try{return new Intl.DateTimeFormat('ar-EG',{dateStyle:'full',timeZone:'Africa/Cairo'}).format(new Date(s+'T12:00:00'))}catch{return s}}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function statusLabel(m){if(['IN_PLAY','PAUSED','LIVE'].includes(m.status))return 'مباشر';if(m.status==='FINISHED')return 'انتهت';if(['POSTPONED','SUSPENDED','CANCELLED'].includes(m.status))return 'مؤجلة';return 'لم تبدأ'}
+function statusClass(m){return ['IN_PLAY','PAUSED','LIVE'].includes(m.status)?'live':m.status==='FINISHED'?'finished':'scheduled'}
+function timeLabel(m){if(['IN_PLAY','PAUSED','LIVE'].includes(m.status))return m.minute?`${m.minute}′`:'مباشر';if(m.status==='FINISHED')return 'انتهت';return new Intl.DateTimeFormat('ar-EG',{hour:'2-digit',minute:'2-digit',timeZone:'Africa/Cairo'}).format(new Date(m.utcDate))}
+function renderMatch(m){let live=statusClass(m)==='live';let score=(m.score&&m.score.fullTime&&m.score.fullTime.home!=null)?`${m.score.fullTime.home} - ${m.score.fullTime.away}`:'—';let home=m.homeTeam?.name||'الفريق الأول',away=m.awayTeam?.name||'الفريق الثاني';let fav=favoriteIds.includes(m.id);return `<article class="match" data-id="${m.id}"><div class="league"><span>${esc(m.competition?.name||'مباراة كرة قدم')}</span><span class="tag" style="${live?'':'background:#243044;color:#d4e0ef'}">${statusLabel(m)}</span></div><div class="teams"><div class="team"><span class="crest">🛡️</span>${esc(home)}</div><div class="score">${score}<small>${timeLabel(m)}</small></div><div class="team"><span class="crest">🛡️</span>${esc(away)}</div></div><div class="matchbottom"><span class="muted">${esc(m.matchday?'الجولة '+m.matchday:'')}</span><button class="fav" data-fav="${m.id}" aria-label="إضافة للمفضلة">${fav?'★ محفوظة':'☆ المفضلة'}</button></div></article>`}
+function drawMatches(){const q=$('search').value.trim().toLowerCase(),filter=$('statusFilter').value;let list=matches.filter(m=>{let names=((m.homeTeam?.name||'')+' '+(m.awayTeam?.name||'')+' '+(m.competition?.name||'')).toLowerCase();return (!q||names.includes(q))&&(filter==='all'||statusClass(m)===filter)});$('matchCount').textContent=`${list.length} مباراة`;$('matchList').innerHTML=list.length?list.map(renderMatch).join(''):`<div class="empty">لا توجد مباريات مطابقة للتصفية.<br>جرّب تاريخًا آخر أو غيّر البحث.</div>`}
+async function loadMatches(){const date=$('matchDate').value||localDate();$('matchStatus').textContent='جارٍ تحميل المباريات…';$('matchList').innerHTML='';try{const path='/matches?dateFrom='+date+'&dateTo='+date;const r=await fetch(`${API}?path=${encodeURIComponent(path)}`);if(!r.ok)throw new Error(r.status===403?'المسابقة أو الطلب غير متاح في باقة API.':r.status===429?'وصلت إلى حد الطلبات المسموح. حاول لاحقًا.':r.status===503?'لم يتم إعداد مفتاح البيانات على الخادم بعد.':'خطأ في خدمة البيانات ('+r.status+')');const data=await r.json();matches=data.matches||[];$('matchStatus').textContent=`بيانات من Football-Data.org • ${fmtDate(date)} • قد تختلف التغطية حسب الباقة.`;drawMatches()}catch(e){$('matchStatus').textContent='تعذر تحميل البيانات: '+e.message;$('matchList').innerHTML='<div class="empty">تأكد أن الموقع منشور على Netlify وأن متغير FOOTBALL_DATA_TOKEN مضبوط في إعدادات الموقع.</div>';}}
+async function loadStandings(){const code=$('leagueSelect').value;$('standingsStatus').textContent='جارٍ تحميل الترتيب…';$('standingsTable').innerHTML='';try{const path='/competitions/'+code+'/standings';const r=await fetch(`${API}?path=${encodeURIComponent(path)}`);if(!r.ok)throw new Error(r.status===403?'الترتيب غير متاح لهذه المسابقة في باقة API.':r.status===503?'لم يتم إعداد مفتاح البيانات على الخادم بعد.':'خطأ في خدمة البيانات ('+r.status+')');const data=await r.json(),table=(data.standings||[]).find(x=>x.type==='TOTAL')?.table||data.standings?.[0]?.table||[];if(!table.length)throw new Error('لا يوجد جدول ترتيب متاح حاليًا.');$('standingsStatus').textContent=data.competition?.name||competitions[code]||'';$('standingsTable').innerHTML=`<div class="tablewrap"><table class="standings"><thead><tr><th>#</th><th>الفريق</th><th>لعب</th><th>فارق</th><th>نقاط</th></tr></thead><tbody>${table.map(t=>`<tr><td>${t.position}</td><td>${esc(t.team?.name)}</td><td>${t.playedGames}</td><td>${t.goalDifference}</td><td><b>${t.points}</b></td></tr>`).join('')}</tbody></table></div>`}catch(e){$('standingsStatus').textContent=e.message}}
+function drawFavs(){const favs=matches.filter(m=>favoriteIds.includes(m.id));$('favList').innerHTML=favs.length?favs.map(renderMatch).join(''):'<div class="empty">لسه مفيش مباريات مفضلة ظاهرة هنا.<br>اضغط ☆ المفضلة بجوار أي مباراة.</div>'}
+function activate(tab){document.querySelectorAll('.section').forEach(s=>s.classList.toggle('active',s.id===tab));document.querySelectorAll('[data-tab]').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));if(tab==='favorites')drawFavs();window.scrollTo({top:0,behavior:'smooth'})}
+document.querySelectorAll('[data-tab]').forEach(b=>b.addEventListener('click',()=>activate(b.dataset.tab)));
+$('today').textContent=fmtDate(localDate());
+$('matchDate').value=localDate();
+$('matchDate').addEventListener('change',loadMatches);
+$('statusFilter').addEventListener('change',drawMatches);
+$('searchBtn').addEventListener('click',drawMatches);
+$('search').addEventListener('input',drawMatches);
+$('refreshTop').addEventListener('click',loadMatches);
+$('loadStandings').addEventListener('click',loadStandings);
+document.addEventListener('click',e=>{const b=e.target.closest('[data-fav]');if(!b)return;const id=Number(b.dataset.fav);favoriteIds=favoriteIds.includes(id)?favoriteIds.filter(x=>x!==id):[...favoriteIds,id];localStorage.setItem('kl_favs',JSON.stringify(favoriteIds));drawMatches();drawFavs()});
+$('openStream').addEventListener('click',()=>{const u=$('streamUrl').value.trim();try{const x=new URL(u);if(!['http:','https:'].includes(x.protocol))throw 0;window.open(x.href,'_blank','noopener,noreferrer')}catch{$('streamUrl').focus();$('streamUrl').setCustomValidity('أدخل رابطًا صحيحًا يبدأ بـ https:// أو http://');$('streamUrl').reportValidity();$('streamUrl').setCustomValidity('')}});
+$('enableNotifications').addEventListener('click',async()=>{if(!('Notification'in window)){$('notifStatus').textContent='هذا المتصفح لا يدعم إشعارات الويب.';return}try{const p=await Notification.requestPermission();$('notifStatus').textContent=p==='granted'?'تم السماح بإشعارات المتصفح. التنبيهات التلقائية للمباريات تحتاج خدمة تعمل بالخلفية.': 'لم يتم السماح بالإشعارات.'}catch{$('notifStatus').textContent='تعذر طلب إذن الإشعارات في هذه البيئة.'}});
+loadMatches();
+</script>
+</body>
+</html>
